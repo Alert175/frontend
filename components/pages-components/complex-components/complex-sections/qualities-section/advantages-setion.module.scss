@@ -1,0 +1,15 @@
+.advantagesSectionContainer {
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

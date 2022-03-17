@@ -1,0 +1,19 @@
+.quill {
+  padding: 20px;
+  background: #F6F6F6;
+  border-radius: 20px;
+
+  .ql-toolbar {
+    border: none !important;
+  }
+
+  .ql-container {
+    border-top: 1px solid !important;
+    border-color: black !important;
+    border-radius: 8px;
+    max-height: 500px;
+    overflow: auto;
+    background-color: white;
+    max-height: calc(100% - 40px);
+  }
+}

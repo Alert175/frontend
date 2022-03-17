@@ -1,0 +1,25 @@
+.container {
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.containerControl {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  min-height: 500px;
+}
+
+.containerElements {
+  grid-template-rows: 1fr repeat(2, auto);
+  gap: 20px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}

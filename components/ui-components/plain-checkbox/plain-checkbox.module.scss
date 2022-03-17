@@ -1,0 +1,29 @@
+@import "styles/variables";
+
+.checkboxContainer {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: start;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.hideInput {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.labelCheckbox {
+  display: grid;
+  place-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 3px;
+  border: 1px solid $black;
+  cursor: pointer;
+}

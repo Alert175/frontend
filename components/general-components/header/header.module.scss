@@ -1,0 +1,38 @@
+@import "styles/variables.scss";
+
+.contentContainer {
+    height: 60px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 5px;
+}
+
+.elementsContainer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.linkContainer{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    align-items: center;
+    gap: 10px;
+
+    .linkElement{
+        padding: 5px;
+        border-bottom: 1px solid transparent;
+    }
+
+    .linkActive {
+        border-color: $black;
+    }
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #808080;
+    border-radius: 4px;
+}

@@ -1,0 +1,38 @@
+.item {
+  &__container {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+  &__element {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-weight: 600;
+}
+
+.value {
+  font-weight: normal;
+}
+
+.input {
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+
+.btn_block {
+  width: 200px;
+  margin: 0 auto;
+}

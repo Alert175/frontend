@@ -1,0 +1,19 @@
+.contentContainer {
+  margin-top: 60px;
+  height: 80px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 5px;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.text {
+  display: grid;
+  align-items: center;
+}

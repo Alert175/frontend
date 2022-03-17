@@ -1,0 +1,70 @@
+.containerSelect {
+  display: grid;
+  justify-content: stretch;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  position: relative;
+}
+
+.controlElement {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  height: 57px;
+  border-radius: 16px;
+  //border: 1px solid black;
+  cursor: pointer;
+  background-color: #F2F2F2;
+
+  &:focus {
+    border: 1px solid black;
+  }
+}
+
+.label {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.holder {
+  font-size: 16px;
+  color: grey;
+}
+
+.activeElement {
+  font-size: 16px;
+  color: #000000;
+}
+
+.elementsContainer {
+  position: absolute;
+  top: calc(100% + 10px);
+  z-index: 2;
+  display: grid;
+  justify-content: stretch;
+  right: 0;
+  left: 0;
+  grid-auto-flow: row;
+  gap: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.element {
+  height: 57px;
+  display: grid;
+  align-items: center;
+  padding: 8px;
+  border-radius: 16px;
+  //border: 1px solid gray;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+
+  &:hover {
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+  }
+}

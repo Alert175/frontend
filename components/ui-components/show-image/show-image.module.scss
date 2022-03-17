@@ -1,0 +1,19 @@
+@import "styles/variables";
+
+.container{
+  background-color: $gray-300;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid $black;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

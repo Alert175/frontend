@@ -1,0 +1,246 @@
+@import "variables";
+
+// position
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: $white;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 108px;
+
+  @media screen and (max-width: $tablet) {
+    grid-gap: 50px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-gap: 38px;
+  }
+}
+
+.wrapper-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 15;
+}
+
+.content {
+  width: 80%;
+  max-width: $laptop;
+  margin: auto auto;
+
+  @media screen and (min-width: $for-k) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1600px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    max-width: 1200px;
+    width: 85%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    max-width: 95%;
+    width: 95%;
+  }
+}
+
+.column {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.center-content {
+  display: grid;
+  place-content: center;
+}
+
+.center-items {
+  display: grid;
+  place-items: center;
+}
+
+.start-content {
+  display: grid;
+  place-content: start;
+}
+
+.start-items {
+  display: grid;
+  place-items: start;
+}
+
+.end-content {
+  display: grid;
+  place-content: end;
+}
+
+.end-items {
+  display: grid;
+  place-items: end;
+}
+
+.column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.plain-row-container {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: start;
+  gap: 20px;
+}
+
+.plain-column-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 20px;
+}
+
+.plain-gap {
+  gap: 20px;
+}
+
+// image
+.picture-container {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+.cover-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.contain-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+// text
+.header {
+  font-family: 'TTNorms-Bold', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+
+  @media screen and (max-width: $mac-book) {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  @media screen and (max-width: $laptop) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  @media screen and (max-width: $mobile-sm) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.plain-text {
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.font-medium {
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.font-bold {
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.font-light {
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.font-regular {
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.fixed-spaces {
+  white-space: pre-line;
+}
+
+// radius
+.full-radius-light {
+  border-radius: 5px;
+}
+
+// sections
+.plain-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.plain-loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+// button
+.plain-button {
+  max-width: 360px;
+}

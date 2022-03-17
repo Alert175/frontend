@@ -1,0 +1,13 @@
+.sideContainer {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+  align-content: start;
+}
+
+
+.selectContainer {
+  position: relative;
+  display: grid;
+  gap: 20px;
+}

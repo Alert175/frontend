@@ -1,0 +1,12 @@
+.containerMessagesList {
+  position: fixed;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+  margin: 0 auto;
+  justify-items: center;
+  z-index: 10;
+}

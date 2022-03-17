@@ -1,0 +1,28 @@
+@import "styles/variables";
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.hideInput {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.labelContainer {
+  height: 56px;
+  background-color: $black;
+  color: $white;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+}

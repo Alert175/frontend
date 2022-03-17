@@ -1,0 +1,22 @@
+.mainContainer {
+  align-content: start;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.inputsContainer {
+  grid-template-columns: 1fr 0.5fr 0.5fr auto;
+  align-items: center;
+  max-width: 900px;
+  gap: 15px;
+}
+
+.loader {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

@@ -1,0 +1,50 @@
+@import "../../../../styles/variables";
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 8px;
+  padding: 15px;
+  background-color: $gray-300;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.label {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+.containerElements {
+  //display: grid;
+  //grid-auto-flow: row;
+  //align-content: start;
+  //gap: 8px;
+  max-height: 248px;
+  overflow: auto;
+}
+
+.element {
+  margin-bottom: 15px;
+  display: grid;
+  border-radius: 16px;
+  border: 1px solid $black;
+  height: 56px;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+  grid-template-columns: 1fr repeat(2, auto);
+  gap: 8px;
+  cursor: pointer;
+  transition: all $time;
+
+  &:hover {
+    background-color: $gray-500;
+    color: $black;
+  }
+}
+
+.elementActive {
+  background-color: $gray-500;
+  color: $black;
+}

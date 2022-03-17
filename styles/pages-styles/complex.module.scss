@@ -1,0 +1,23 @@
+.pageContainer {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 48px;
+  min-height: calc(100vh - 60px);
+  align-content: start;
+  align-items: start;
+}
+
+
+.togggle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.button {
+  padding: 10px 15px;
+  margin-right: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #333;
+}
